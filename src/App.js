@@ -7,11 +7,12 @@ import Categories from './components/categories/Categories';
 import Carousel from './components/carousel/Carousel';
 
 export default function App() {
+  console.log('I am App Component')
   return <div>
-    <Header />
+    {/* <Header /> */}
     <Navbar />
-    <Categories/>
-    <Carousel />
+    {/* <Categories/> */}
+    {/* <Carousel /> */}
     <Main />
     <Footer />
   </div>

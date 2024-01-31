@@ -7,7 +7,7 @@ export default function Categories() {
             <div className='col'>
                 <div className='category text-center'>
                     <img src='https://rukminim1.flixcart.com/flap/72/72/image/29327f40e9c4d26b.png?q=100' />
-                    <div>Grocery</div>
+                    <div className='myClass2'>Grocery</div>
                 </div>
             </div>
             <div className='col'>
