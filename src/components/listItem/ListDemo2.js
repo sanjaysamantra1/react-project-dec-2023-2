@@ -8,6 +8,7 @@ export default function ListDemo2() {
         { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
         { eId: 105, name: 'deepak', sal: 8000, gender: 'male' },
     ];
+    let columns = Object.keys(employees[0]);
 
     return <>
         <h2 className='text-center'>Employee List</h2>
@@ -15,10 +16,9 @@ export default function ListDemo2() {
         <table className='table table-bordered table-striped'>
             <thead>
                 <tr>
-                    <th>Employee Id</th>
-                    <th>Name</th>
-                    <th>Salary</th>
-                    <th>Gender</th>
+                    {columns.map((col, ind) => {
+                        return <th key={ind}>{col}</th>
+                    })}
                 </tr>
             </thead>
             <tbody>

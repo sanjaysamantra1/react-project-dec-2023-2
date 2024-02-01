@@ -8,12 +8,12 @@ export default function ListDemo3() {
         <div className='container'>
             <div className='row'>
                 {products.map(product => {
-                    return <div className='col-sm-3'>
-                        <div classname="card">
-                            <img src={product.image} className="card-img-top" alt="..." />
-                            <div classname="card-body text-center" >
-                                <h5 classname="card-title">{product.category}</h5>
-                                <p classname="card-text" style={{ height: '150px' }}>{product.description}</p>
+                    return <div className='col-sm-3 mb-1' key={product.id}>
+                        <div className="card">
+                            <img src={product.image} className="card-img-top" style={{ height: '200px' }} alt='something' />
+                            <div className="card-body text-center" >
+                                <h5 className="card-title">{product.category}</h5>
+                                <p className="card-text text-truncate">{product.description}</p>
                                 <button className='btn btn-primary'>Buy Now</button>
                             </div>
                         </div>
