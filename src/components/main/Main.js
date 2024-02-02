@@ -10,17 +10,8 @@ import ListDemo1 from '../listItem/ListDemo1';
 import ListDemo2 from '../listItem/ListDemo2';
 import ListDemo3 from '../listItem/ListDemo3';
 import Courses from '../listItem/Courses';
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import UserList from '../listItem/UserList';
 import CountryList from '../listItem/CountryList';
-
-const client = new ApolloClient({
-    // uri: "http://localhost:5000/courses",
-    uri: "https://studio.apollographql.com/public/countries/variant/current/explorer",
-    cache: new InMemoryCache()
-});
-
-
 
 export default function Main() {
     return <div style={{ 'minHeight': '400px' }}>
@@ -31,11 +22,8 @@ export default function Main() {
         {/* <ConditionalDemo3 /> */}
         {/* <DatabindingDemo1 /> */}
         {/* <ListDemo1 /> */}
-        <ListDemo2 />
-        {/* <ListDemo3 /> */}
-        {/* <ApolloProvider client={client}>
-            <Courses />
-        </ApolloProvider> */}
+        {/* <ListDemo2 /> */}
+        <ListDemo3 />
         {/* <UserList /> */}
         {/* <CountryList /> */}
     </div>
