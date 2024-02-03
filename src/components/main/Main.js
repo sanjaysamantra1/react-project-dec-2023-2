@@ -12,6 +12,10 @@ import ListDemo3 from '../listItem/ListDemo3';
 import Courses from '../listItem/Courses';
 import UserList from '../listItem/UserList';
 import CountryList from '../listItem/CountryList';
+import CounterDemo1 from '../state/CounterDemo1';
+import CounterDemo2 from '../state/CounterDemo2';
+import CounterDemo3 from '../state/CounterDemo3';
+import GreetDemo1 from '../props/GreetDemo1';
 
 export default function Main() {
     return <div style={{ 'minHeight': '400px' }}>
@@ -23,8 +27,12 @@ export default function Main() {
         {/* <DatabindingDemo1 /> */}
         {/* <ListDemo1 /> */}
         {/* <ListDemo2 /> */}
-        <ListDemo3 />
+        {/* <ListDemo3 /> */}
         {/* <UserList /> */}
         {/* <CountryList /> */}
+        {/* <CounterDemo1 /> */}
+        {/* <CounterDemo2/> */}
+        {/* <CounterDemo3 /> */}
+        {/* <GreetDemo1 name='sanjay' msg='Good Morning' /> */}
     </div>
 }

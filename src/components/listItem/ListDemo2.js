@@ -16,7 +16,7 @@ export default function ListDemo2() {
         <table className='table table-bordered table-striped'>
             <thead>
                 <tr>
-                    {columns.map((col, ind) => {
+                    {columns.map((col,ind) => {
                         return <th key={ind}>{col}</th>
                     })}
                 </tr>
