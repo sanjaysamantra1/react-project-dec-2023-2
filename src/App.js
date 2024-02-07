@@ -11,7 +11,7 @@ export default function App(props) {
   return <div>
     {/* <Header /> */}
     <Navbar />
-    <Categories/>
+    {/* <Categories/> */}
     {/* <Carousel /> */}
     <Main name={props.name} />
     <Footer />

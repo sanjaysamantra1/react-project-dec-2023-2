@@ -18,6 +18,11 @@ import CounterDemo3 from '../state/CounterDemo3';
 import GreetDemo1 from '../props/GreetDemo1';
 import Addition from '../demo/Addition';
 import MyModal from '../demo/MyModal';
+import StateDemo1 from '../state/StateDemo1';
+import ToggleDemo1 from '../state/ToggleDemo1';
+import ToggleDemo2 from '../state/ToggleDemo2';
+import PasswordDemo1 from '../state/PasswordDemo1';
+import RemainingCharacter from '../state/RemainingCharacter';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -30,7 +35,7 @@ export default function Main(props) {
         {/* <ListDemo1 /> */}
         {/* <ListDemo2 /> */}
         {/* <ListDemo3 /> */}
-        <UserList />
+        {/* <UserList /> */}
         {/* <CountryList /> */}
         {/* <CounterDemo1 /> */}
         {/* <CounterDemo2/> */}
@@ -74,5 +79,11 @@ export default function Main(props) {
                 <p>dsafkhjhj</p>
             </>
         </MyModal> */}
+
+        {/* <StateDemo1 /> */}
+        {/* <ToggleDemo1 /> */}
+        {/* <ToggleDemo2 /> */}
+        {/* <PasswordDemo1 /> */}
+        <RemainingCharacter />
     </div>
 }

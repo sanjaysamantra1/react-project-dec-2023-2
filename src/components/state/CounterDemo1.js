@@ -6,7 +6,7 @@ export default class CounterDemo1 extends Component {
     increment=()=> {
         this.counter = this.counter + 1;
         console.log(this.counter);
-        this.forceUpdate(); // forceUpdate() is inbuilt method
+        this.forceUpdate(); // forceUpdate() is inbuilt
     }
 
     render() {
