@@ -23,6 +23,9 @@ import ToggleDemo1 from '../state/ToggleDemo1';
 import ToggleDemo2 from '../state/ToggleDemo2';
 import PasswordDemo1 from '../state/PasswordDemo1';
 import RemainingCharacter from '../state/RemainingCharacter';
+import StateDropDown from '../state/StateDropDown';
+import Folder from '../FolderExplorer/Folder';
+import folderData from '../FolderExplorer/folderData.json'
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -39,7 +42,7 @@ export default function Main(props) {
         {/* <CountryList /> */}
         {/* <CounterDemo1 /> */}
         {/* <CounterDemo2/> */}
-        {/* <CounterDemo3 /> */}
+        <CounterDemo3 />
         {/* <GreetDemo1 name='sanjay' msg='Good Morning'>
             <div>This content goes to child comp</div>
         </GreetDemo1> */}
@@ -84,6 +87,8 @@ export default function Main(props) {
         {/* <ToggleDemo1 /> */}
         {/* <ToggleDemo2 /> */}
         {/* <PasswordDemo1 /> */}
-        <RemainingCharacter />
+        {/* <RemainingCharacter /> */}
+        {/* <StateDropDown /> */}
+        <Folder folderInfo={folderData} />
     </div>
 }
