@@ -23,6 +23,5 @@ export default function Folder({ folderInfo }) {
             🏢
             {folderInfo.name} <br />
         </span>
-
     }
 }
