@@ -26,6 +26,9 @@ import RemainingCharacter from '../state/RemainingCharacter';
 import StateDropDown from '../state/StateDropDown';
 import Folder from '../FolderExplorer/Folder';
 import folderData from '../FolderExplorer/folderData.json'
+import SweetAlertDemo from '../demo/SweetAlertDemo';
+import ReactModalDemo from '../demo/ReactModalDemo';
+import ProductList from '../listItem/ProductList';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -42,7 +45,7 @@ export default function Main(props) {
         {/* <CountryList /> */}
         {/* <CounterDemo1 /> */}
         {/* <CounterDemo2/> */}
-        <CounterDemo3 />
+        {/* <CounterDemo3 /> */}
         {/* <GreetDemo1 name='sanjay' msg='Good Morning'>
             <div>This content goes to child comp</div>
         </GreetDemo1> */}
@@ -89,6 +92,9 @@ export default function Main(props) {
         {/* <PasswordDemo1 /> */}
         {/* <RemainingCharacter /> */}
         {/* <StateDropDown /> */}
-        <Folder folderInfo={folderData} />
+        {/* <Folder folderInfo={folderData} /> */}
+        {/* <SweetAlertDemo /> */}
+        {/* <ReactModalDemo /> */}
+        <ProductList />
     </div>
 }
