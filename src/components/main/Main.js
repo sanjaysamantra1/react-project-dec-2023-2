@@ -29,6 +29,7 @@ import folderData from '../FolderExplorer/folderData.json'
 import SweetAlertDemo from '../demo/SweetAlertDemo';
 import ReactModalDemo from '../demo/ReactModalDemo';
 import ProductList from '../listItem/ProductList';
+import ToDoCRUD from '../ToDoCRUD/ToDoCRUD';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -95,6 +96,7 @@ export default function Main(props) {
         {/* <Folder folderInfo={folderData} /> */}
         {/* <SweetAlertDemo /> */}
         {/* <ReactModalDemo /> */}
-        <ProductList />
+        {/* <ProductList /> */}
+        <ToDoCRUD />
     </div>
 }
