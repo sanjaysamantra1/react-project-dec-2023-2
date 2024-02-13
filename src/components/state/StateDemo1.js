@@ -6,13 +6,14 @@ export default class StateDemo1 extends Component {
         this.state = {  // state is a pre-defined keyword
             counter: 0, // Counter is a state variable,
         }
+        this.increment = this.increment.bind(this)
     }
-    increment = () => {
+    increment() {
+        console.log(this)
         this.setState({ counter: this.state.counter + 1 }, () => {
             console.log(this.state.counter);
         }); // setState() is Asynchronous
     }
-
     render() {
         return <>
             <div>Counter value is {this.state.counter} </div>

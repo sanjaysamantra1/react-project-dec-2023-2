@@ -30,6 +30,12 @@ import SweetAlertDemo from '../demo/SweetAlertDemo';
 import ReactModalDemo from '../demo/ReactModalDemo';
 import ProductList from '../listItem/ProductList';
 import ToDoCRUD from '../ToDoCRUD/ToDoCRUD';
+import EventDemo1 from '../Event/EventDemo1';
+import EventDemo2 from '../Event/EventDemo2';
+import EventDemo3 from '../Event/EventDemo3';
+import EventDemo4 from '../Event/EventDemo4';
+import EventDemo5 from '../Event/EventDemo5';
+import EmployeeCrud from '../EmployeeCRUD/EmployeeCrud';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -97,6 +103,12 @@ export default function Main(props) {
         {/* <SweetAlertDemo /> */}
         {/* <ReactModalDemo /> */}
         {/* <ProductList /> */}
-        <ToDoCRUD />
+        {/* <ToDoCRUD /> */}
+        {/* <EventDemo1 /> */}
+        {/* <EventDemo2 /> */}
+        {/* <EventDemo3 /> */}
+        {/* <EventDemo4/> */}
+        {/* <EventDemo5/> */}
+        <EmployeeCrud />
     </div>
 }

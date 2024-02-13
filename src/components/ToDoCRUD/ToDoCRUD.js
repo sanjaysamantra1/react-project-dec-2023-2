@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import ToDoList from './ToDoList'
 import AddToDo from './AddToDo'
 
-let initialtodos = [
-    { id: 1, text: 'To Do 1', completed: true },
-    { id: 2, text: 'To Do 2', completed: false },
-    { id: 3, text: 'To Do 3', completed: true }
-]
-
 export default function ToDoCRUD() {
+    let initialtodos = [
+        { id: 1, text: 'To Do 1', completed: true },
+        { id: 2, text: 'To Do 2', completed: false },
+        { id: 3, text: 'To Do 3', completed: true }
+    ]
     let [todoArr, setToDoArr] = useState(initialtodos);
 
     let deleteToDo = (id) => {
