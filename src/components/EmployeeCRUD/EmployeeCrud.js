@@ -20,8 +20,8 @@ export default function EmployeeCrud() {
         setEmployees([...filteredEmployees])
     }
     const addEmployee = (emp) => {
-        employees.push(emp);
-        setEmployees([...employees]);
+        let tempArr = [...employees, emp]
+        setEmployees(tempArr);
     }
     const editEmployee = (emp) => {
         setSelectedEmployee(emp);
@@ -60,9 +60,9 @@ export default function EmployeeCrud() {
                         isEdit ?
                             <EditEmployee
                                 selectedEmployee={selectedEmployee}
-                                saveEditedEmployee={saveEditedEmployee} 
+                                saveEditedEmployee={saveEditedEmployee}
                                 cancelSave={cancelSave}
-                                />
+                            />
                             :
                             <AddEmployee addEmployee={addEmployee} />
                     }

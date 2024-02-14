@@ -11,9 +11,7 @@ let name = 'SANJAY SAMANTRA';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StrictMode>
     <App name={name} />
-  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
