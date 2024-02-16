@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function ComponentB({ b }) {
-  console.log('B Component rendered...')
-  return (
-    <div>ComponentB - b value is {b}</div>
-  )
+export default class ComponentB extends Component {
+  componentDidMount() {
+    console.log('Comp-B mounted')
+  }
+  componentWillUnmount() {
+    console.log('Comp-B is about to be unmounted')
+  }
+  render() {
+    return (
+      <div>ComponentB</div>
+    )
+  }
 }
-export default React.memo(ComponentB)
