@@ -43,6 +43,7 @@ import MemoParent from '../memo/MemoParent';
 import LifeCycleDemo1 from '../LifeCycle/LifeCycleDemo1';
 import LifeCycleDemo2 from '../LifeCycle/LifeCycleDemo2';
 import LifeCycleDemo3 from '../LifeCycle/LifeCycleDemo3';
+import LifeCycleDemo4 from '../LifeCycle/LifeCycleDemo4';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -123,6 +124,7 @@ export default function Main(props) {
         {/* <MemoParent /> */}
         {/* <LifeCycleDemo1  /> */}
         {/* <LifeCycleDemo2 /> */}
-        <LifeCycleDemo3 />
+        {/* <LifeCycleDemo3 /> */}
+        <LifeCycleDemo4 />
     </div>
 }
