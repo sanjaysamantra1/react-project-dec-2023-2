@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export default function CounterDemo3() {
     let [counter, updateCounter] = useState(0);
+    let prevValue = useRef(0);
 
     let increment = () => {
         updateCounter(counter + 1);
-
     }
     useEffect(() => {
-        console.log(counter);
-    });
-
+        prevValue.current = counter;
+    }, [counter]);
     return <>
-        <p>Counter value is {counter}</p>
+        <p>Current value - {counter} , previous Value is-{prevValue.current}</p>
         <button onClick={increment}>Increment</button>
     </>
 }

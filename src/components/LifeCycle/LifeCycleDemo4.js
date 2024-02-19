@@ -17,7 +17,7 @@ export default function LifeCycleDemo4() {
         // This code gets executed onLoad , onChange
 
         return ()=>{
-            console.log('COmp will unmount')
+            console.log('Comp will unmount')
         }
     },[userId]);
 
