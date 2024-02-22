@@ -14,8 +14,8 @@ export default function HttpDemo5() {
         }
         try {
             let responseArr = await axios.all(promiseArr);
-            responseArr = responseArr.map(resp => resp.data)
             console.log(responseArr);
+            responseArr = responseArr.map(resp => resp.data)
             setGithubdata(responseArr)
         } catch (err) {
             console.log('SOmething went wrong')

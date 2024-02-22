@@ -143,8 +143,8 @@ export default function Main(props) {
         {/* <FormDemo3 /> */}
         {/* <HttpDemo1 /> */}
         {/* <HttpDemo2 /> */}
-        {/* <HttpDemo3 /> */}
-        {/* <HttpDemo4 /> */}
+        <HttpDemo3 />
+        <HttpDemo4 />
         <HttpDemo5 />
     </div>
 }
