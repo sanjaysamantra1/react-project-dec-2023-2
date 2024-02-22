@@ -49,6 +49,11 @@ import RefDemo2 from '../Form/RefDemo2';
 import FormDemo1 from '../Form/FormDemo1';
 import FormDemo2 from '../Form/FormDemo2';
 import FormDemo3 from '../Form/FormDemo3';
+import HttpDemo1 from '../HTTP/HttpDemo1';
+import HttpDemo2 from '../HTTP/HttpDemo2';
+import HttpDemo3 from '../HTTP/HttpDemo3';
+import HttpDemo4 from '../HTTP/HttpDemo4';
+import HttpDemo5 from '../HTTP/HttpDemo5';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -135,6 +140,11 @@ export default function Main(props) {
         {/* <RefDemo2 /> */}
         {/* <FormDemo1 /> */}
         {/* <FormDemo2 /> */}
-        <FormDemo3 />
+        {/* <FormDemo3 /> */}
+        {/* <HttpDemo1 /> */}
+        {/* <HttpDemo2 /> */}
+        {/* <HttpDemo3 /> */}
+        {/* <HttpDemo4 /> */}
+        <HttpDemo5 />
     </div>
 }
