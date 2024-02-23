@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { useEffect } from 'react';
 import UserCard from '../listItem/UserCard';
 import client from './client';
+import LoggerHOC from '../HOC/LoggerHOC';
 
-export default function HttpDemo4() {
+function HttpDemo4() {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -51,3 +52,4 @@ export default function HttpDemo4() {
         </div>
     </>
 }
+export default LoggerHOC(HttpDemo4)

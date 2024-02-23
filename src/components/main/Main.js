@@ -54,6 +54,8 @@ import HttpDemo2 from '../HTTP/HttpDemo2';
 import HttpDemo3 from '../HTTP/HttpDemo3';
 import HttpDemo4 from '../HTTP/HttpDemo4';
 import HttpDemo5 from '../HTTP/HttpDemo5';
+import ClickCounter from '../HOC/ClickCounter';
+import HoverCounter from '../HOC/HoverCounter';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -143,8 +145,10 @@ export default function Main(props) {
         {/* <FormDemo3 /> */}
         {/* <HttpDemo1 /> */}
         {/* <HttpDemo2 /> */}
-        <HttpDemo3 />
-        <HttpDemo4 />
+        {/* <HttpDemo3 /> */}
+        {/* <HttpDemo4 /> */}
         <HttpDemo5 />
+        {/* <ClickCounter />
+        <HoverCounter /> */}
     </div>
 }

@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import LoggerHOC from '../HOC/LoggerHOC';
 
-export default function HttpDemo5() {
+function HttpDemo5() {
     let [githubData, setGithubdata] = useState([])
 
     const userNames = ['sanjaysamantra1', 'defunkt', 'evanphx'];
@@ -14,7 +15,6 @@ export default function HttpDemo5() {
         }
         try {
             let responseArr = await axios.all(promiseArr);
-            console.log(responseArr);
             responseArr = responseArr.map(resp => resp.data)
             setGithubdata(responseArr)
         } catch (err) {
@@ -49,3 +49,5 @@ export default function HttpDemo5() {
 
     )
 }
+// export default HttpDemo5;
+export default LoggerHOC(HttpDemo5)
