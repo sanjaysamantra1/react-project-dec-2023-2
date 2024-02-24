@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { useEffect } from 'react';
-
 const LoggerHOC = (InputComponent) => {
     const EnhancedComponent = (props) => {
         useEffect(() => {

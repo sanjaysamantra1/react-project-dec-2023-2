@@ -56,6 +56,12 @@ import HttpDemo4 from '../HTTP/HttpDemo4';
 import HttpDemo5 from '../HTTP/HttpDemo5';
 import ClickCounter from '../HOC/ClickCounter';
 import HoverCounter from '../HOC/HoverCounter';
+import { Route, Routes } from 'react-router-dom';
+import Home from '../Routing/Home';
+import AboutUs from '../Routing/AboutUs';
+import Careers from '../Routing/Careers';
+import ContactUs from '../Routing/ContactUs';
+import NotFound from '../Routing/NotFound';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -147,8 +153,18 @@ export default function Main(props) {
         {/* <HttpDemo2 /> */}
         {/* <HttpDemo3 /> */}
         {/* <HttpDemo4 /> */}
-        <HttpDemo5 />
+        {/* <HttpDemo5 /> */}
         {/* <ClickCounter />
         <HoverCounter /> */}
+
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/aboutus" element={<AboutUs />} />
+            <Route exact path="/careers" element={<Careers />} />
+            <Route exact path="/contactus" element={<ContactUs />} />
+            <Route exact path="/products" element={<ProductList />} />
+            <Route path="*" element={<NotFound />} />
+        </Routes>
     </div>
 }

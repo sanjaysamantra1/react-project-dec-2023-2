@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter } from 'react-router-dom';
 
 let name = 'SANJAY SAMANTRA';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App name={name} />
+    <BrowserRouter>
+        <App name={name} />
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
