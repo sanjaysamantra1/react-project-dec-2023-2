@@ -56,7 +56,7 @@ export default function ProductList() {
                                 <h5 className="card-title">{product.category}</h5>
                                 <p className="card-text text-truncate" title={product.description}>{product.description}</p>
                                 <p className="card-text text-truncate" title={product.price}>{product.price}</p>
-                                <button className='btn btn-primary'>Buy Now</button>
+                                <button className='btn btn-primary'>View</button>
                             </div>
                         </div>
                     </div>

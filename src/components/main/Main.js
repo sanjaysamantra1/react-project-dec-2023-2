@@ -62,6 +62,10 @@ import AboutUs from '../Routing/AboutUs';
 import Careers from '../Routing/Careers';
 import ContactUs from '../Routing/ContactUs';
 import NotFound from '../Routing/NotFound';
+import Products from '../Routing/Products';
+import ProductDetails from '../Routing/ProductDetails';
+import Users from '../Routing/Users';
+import UserDetails from '../Routing/UserDetails';
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -163,7 +167,10 @@ export default function Main(props) {
             <Route exact path="/aboutus" element={<AboutUs />} />
             <Route exact path="/careers" element={<Careers />} />
             <Route exact path="/contactus" element={<ContactUs />} />
-            <Route exact path="/products" element={<ProductList />} />
+            <Route exact path="/products" element={<Products />} />
+            <Route path="/productdetails/:id" element={<ProductDetails />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/userdetails" element={<UserDetails />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     </div>
