@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Header from './components/header/Header'
 import Main from './components/main/Main'
 import Footer from './components/footer/Footer'
@@ -13,6 +13,7 @@ import NotFound from './components/Routing/NotFound';
 import { myInterceptor1, requestStartedInterceptor, responseReceivedInterceptor } from './utils/MyInterceptor1';
 import { Route, Routes } from 'react-router-dom';
 
+
 export default function App(props) {
 
   myInterceptor1();
@@ -25,6 +26,7 @@ export default function App(props) {
     {/* <Categories/> */}
     {/* <Carousel /> */}
     <Main name={props.name} />
+
     <Footer />
   </div>
 }

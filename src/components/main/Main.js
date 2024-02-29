@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { FaBeer, FaTrash, FaTrashAlt, FaTrashRestore } from "react-icons/fa";
 import Increment from '../increment/Increment';
 import EvenOdd from '../EvenOdd/EvenOdd';
@@ -62,10 +62,13 @@ import AboutUs from '../Routing/AboutUs';
 import Careers from '../Routing/Careers';
 import ContactUs from '../Routing/ContactUs';
 import NotFound from '../Routing/NotFound';
-import Products from '../Routing/Products';
 import ProductDetails from '../Routing/ProductDetails';
-import Users from '../Routing/Users';
 import UserDetails from '../Routing/UserDetails';
+import PermanentJobs from '../Routing/PermanentJobs';
+import ContractJobs from '../Routing/ContractJobs';
+import ProtectedRoute from '../Routing/ProtectedRoute';
+const Products = React.lazy(() => import('../Routing/Products'));
+const Users = React.lazy(() => import('../Routing/Users'));
 
 export default function Main(props) {
     return <div style={{ 'minHeight': '400px' }}>
@@ -162,14 +165,26 @@ export default function Main(props) {
         <HoverCounter /> */}
 
         <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
-            <Route exact path="/careers" element={<Careers />} />
+            <Route exact path="/careers" element={<Careers />}>
+                <Route index element={<PermanentJobs />} />
+                <Route path="permanent" element={<PermanentJobs />} />
+                <Route path="contract" element={<ContractJobs />} />
+            </Route>
             <Route exact path="/contactus" element={<ContactUs />} />
-            <Route exact path="/products" element={<Products />} />
+            <Route exact path="/products" element={<ProtectedRoute>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Products />
+                </Suspense>
+            </ProtectedRoute>} />
             <Route path="/productdetails/:id" element={<ProductDetails />} />
-            <Route path="/users" element={<Users />} />
+            <Route path="/users" element={<ProtectedRoute>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Users />
+                </Suspense>
+            </ProtectedRoute>} />
             <Route path="/userdetails" element={<UserDetails />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
