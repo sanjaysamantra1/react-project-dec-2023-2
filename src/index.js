@@ -7,13 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter } from 'react-router-dom';
+import { myContext } from './utils/MyContext';
 
 let name = 'SANJAY SAMANTRA';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-        <App name={name} />
+        <myContext.Provider value={{ userName: 'Sachin', add: 'Mumbai', age: 45 }} >
+            <App name={name} />
+        </myContext.Provider>
     </BrowserRouter>
 );
 

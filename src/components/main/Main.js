@@ -165,8 +165,8 @@ export default function Main(props) {
         <HoverCounter /> */}
 
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home name={props.name} />} />
+            <Route path="/home" element={<Home name={props.name} />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
             <Route exact path="/careers" element={<Careers />}>
                 <Route index element={<PermanentJobs />} />
