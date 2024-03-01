@@ -16,6 +16,9 @@ import { Route, Routes } from 'react-router-dom';
 
 export default function App(props) {
 
+  console.log(process.env.NODE_ENV);
+  console.log(process.env.REACT_APP_MY_NAME);
+
   myInterceptor1();
   // requestStartedInterceptor();
   // responseReceivedInterceptor();
