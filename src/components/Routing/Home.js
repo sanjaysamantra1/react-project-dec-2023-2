@@ -3,6 +3,9 @@ import { BuggyCounter } from '../error-boundary/BuggyCounter'
 import MyErrorBoundry from '../error-boundary/MyErrorBoundry'
 import { useContext } from 'react'
 import { myContext } from '../../utils/MyContext'
+import UseMemoExample from '../Hooks/UseMemoExample'
+import UseCallbackExample from '../Hooks/UseCallbackExample'
+import UseReducerExample from '../Hooks/UseReducerExample'
 
 export default function Home(props) {
   const contextData = useContext(myContext)
@@ -11,14 +14,18 @@ export default function Home(props) {
   console.log(contextData)
 
   return <>
-    <h1>This is Home Component</h1>
+    {/* <h1>This is Home Component</h1>
     <div>Name value is {props.name} </div>
-    <div>Name is {contextData.userName} , age is {contextData.age} </div>
+    <div>Name is {contextData.userName} , age is {contextData.age} </div> */}
 
     {/* <MyErrorBoundry>
       <BuggyCounter />
     </MyErrorBoundry>
     =============================================
     <BuggyCounter /> */}
+
+    {/* <UseMemoExample /> */}
+    {/* <UseCallbackExample /> */}
+    <UseReducerExample />
   </>
 }
